@@ -53,7 +53,32 @@
         </form>
         </div>
     
+    
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDphA7csEnSjPf_7-BkpiTykEpjEkQcJqg",
+            authDomain: "udemy-modern-javascript-9909b.firebaseapp.com",
+            projectId: "udemy-modern-javascript-9909b",
+            storageBucket: "udemy-modern-javascript-9909b.appspot.com",
+            messagingSenderId: "603988518808",
+            appId: "1:603988518808:web:fbd79c914ccfc818696ded",
+            measurementId: "G-GHCQDDVSZP"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const firestore = getFirestore(app);
+        
+    </script>    
     <script src="scripts/app.js"></script>
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
